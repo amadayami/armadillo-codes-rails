@@ -1,5 +1,13 @@
-<footer class="footer fixed-bottom" style="background-color:#707e8d;">
-    <div class="container" style="margin:auto; width: 50%;">
-      <p class="text-muted" id="footer-text">Copyright <i class="fa fa-copyright"></i> <%= link_to "Armadillo_Codes", "https://www.armadillo-codes.com", id: "footer-text" %></p>
-    </div>
+<footer class="d-flex flex-wrap justify-content-between align-items-center px-1 py-2 border-top fixed-bottom" id="footer-body">
+  <div class="col-md-4 d-flex align-items-center">
+    <%= image_tag("armadillo-logo.svg", size: "24") %>
+    <span class="mb-3 mb-md-0 text-body-secondary" id="footer-text">armadillo_codes</span>
+  </div>
+
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a class="text-body-secondary" id="footer-link" href="https://www.linkedin.com/in/amadaya-michael/"><i class="fa fa-linkedin"></i></a></li>
+    <li class="ms-3"><a class="text-body-secondary" id="footer-link" href="https://github.com/amadayami"><i class="fa fa-github"></i></a></li>
+    <li class="ms-3"><a class="text-body-secondary" id="footer-link" href="mailto:amadayamichael@gmail.com"><i class="fa fa-google"></i></a></li>
+    <li class="ms-3"><a class="text-body-secondary" id="footer-link" href="mailto:fen@armadillo-codes.com"><i class="fa fa-envelope"></i></a></li>
+  </ul>
 </footer>

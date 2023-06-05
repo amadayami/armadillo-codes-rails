@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Ubuntu-Title';
+  src: url('Ubuntu-Title.ttf');
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu-Title';
+}
+
+#footer-body {
+  background-color: #77899d;
+}
+
+#footer-text {
+  font-family: 'Ubuntu-Title';
+  color: white;
+}
+
+#footer-link {
+  color: white;
+}
+
+#footer-link:hover {
+  color: #53b8f2;
+}
