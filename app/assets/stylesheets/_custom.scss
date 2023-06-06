@@ -3,8 +3,28 @@
   src: url('Ubuntu-Title.ttf');
 }
 
-.navbar-brand {
-  font-family: 'Ubuntu-Title';
+@font-face {
+  font-family: 'Chumbly';
+  src: url('chumbly.ttf')
+}
+
+@font-face {
+  font-family: 'Nebulous-Content';
+  src: url('Nebulous Content.otf')
+}
+
+@font-face {
+  font-family: 'Olney-Light';
+  src: url('olney_light.otf')
+}
+
+body {
+  font-family: 'Chumbly';
+  padding-bottom: 80px;
+}
+
+#navbar-body {
+  background-color: #77899d;
 }
 
 #footer-body {
@@ -20,6 +40,24 @@
   color: white;
 }
 
-#footer-link:hover {
+#footer-link a:hover {
   color: #53b8f2;
+}
+
+a:hover {
+  color: #53b8f2;
+}
+
+#home-container{
+  margin-top: 20px;
+}
+
+#jumbotron{
+  background-image: url('Home Popup.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: white !important;
+
+  color: black;
 }
