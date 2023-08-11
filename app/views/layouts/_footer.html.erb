@@ -5,9 +5,17 @@
   </div>
 
   <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-    <li class="ms-3"><a class="text-body-secondary" id="footer-link" href="https://www.linkedin.com/in/amadaya-michael/"><i class="fa fa-linkedin"></i></a></li>
-    <li class="ms-3"><a class="text-body-secondary" id="footer-link" href="https://github.com/amadayami"><i class="fa fa-github"></i></a></li>
-    <li class="ms-3"><a class="text-body-secondary" id="footer-link" href="mailto:amadayamichael@gmail.com"><i class="fa fa-google"></i></a></li>
-    <li class="ms-3"><a class="text-body-secondary" id="footer-link" href="mailto:fen@armadillo-codes.com"><i class="fa fa-envelope"></i></a></li>
+    <li class="ms-3">
+      <%= link_to icon('fa', 'linkedin'), "https://www.linkedin.com/in/amadaya-michael/", class: "footer-link", target: :_blank %>
+    </li>
+    <li class="ms-3">
+      <%= link_to icon('fa-brands', 'github'), "https://github.com/amadayami", class: "footer-link", target: :_blank %>
+    </li>
+    <li class="ms-3">
+      <%= link_to icon('fa-brands', 'google'), "mailto:amadayamichael@gmail.com", class: "footer-link"%>
+    </li>
+    <li class="ms-3">
+      <%= link_to icon('fa-solid', 'envelope'), "mailto:fen@armadillo-codes.com", class: "footer-link"%>
+    </li>
   </ul>
 </footer>
