@@ -1,5 +1,5 @@
 <div class="container mx-auto mt-5">
-  <div class="row">
+  <div class="row border border-3 border-primary py-3">
     <div class="col-8">
       <%= render 'layouts/carousel' %>
     </div>
@@ -11,7 +11,9 @@
       earthquakes, and meteoroids. Can you master the elements and beat
       the clock?
       </h5>
-      <%= link_to 'Download', "/Weather Master.zip" %>
+      <button id="download-button">
+        <%= link_to 'Download', "/Weather Master.zip", id: "download-link" %>
+      </button>
     </div>
   </div>
 </div>
