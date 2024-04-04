@@ -1,0 +1,18 @@
+<h1 class="center-text" id="search_header">Squishmallow Search</h1>
+<p class="center-text" id="search_text">Choose a category and search for your desired squish!</p>
+
+<%= form_with url: "/search", class: "center-text", id: "squishsearch_form", method: :get do |form|%>
+  <%= form.select :squishcategory,
+                  options_for_select([['Category', 'disp'],
+                                      ['Name','name'],
+                                      ['Collector #','collectornum'],
+                                      ['Squishdate', 'squishdate'],
+                                      ['Description', 'description']], "Category"),
+                  {name: "squishcategory", id: "squishcategory"} %>
+  <%= form.text_field :criteria, {placeholder: "Pick a category!", name: "criteria"}%>
+  <%= form.submit "Search" %>
+<% end %>
+<p id="query_print"></p>
+<div class="search_results" style="display:block"></div>
+
+<%= link_to icon('fa', 'question-circle'), squishfaq_path, class: "center-text", id: "help_link" %>

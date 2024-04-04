@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get 'projects', to: 'pages#projects'
   get 'weather-master', to: 'pages#weather_master'
   get 'wips', to: 'pages#unfinished_projects'
+  get 'squish-search', to: 'pages#squishsearch'
+  get 'squishfaq', to: 'pages#squishfaq'
 end
