@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'pages#home'
   get 'projects', to: 'pages#projects'
-  get 'weather-master', to: 'pages#weather_master'
+  get 'weathermaster', to: 'pages#weather_master'
   get 'wips', to: 'pages#unfinished_projects'
-  get 'squish-search', to: 'pages#squishsearch'
+  get 'squishsearch', to: 'pages#squishsearch'
   get 'squishfaq', to: 'pages#squishfaq'
 end
