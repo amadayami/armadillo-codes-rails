@@ -1,0 +1,9 @@
+<%# locals: (project_title:, project_languages:, project_description:, project_link:) %>
+<div class="card" style="width: 18rem; margin: 15px;">
+    <div class="card-body col-sm">
+      <h5 class="card-title"><%= project_title %></h5>
+      <h6 class="card-subtitle mb-2 text-muted">Made with: <%= project_languages %></h6>
+      <p class="card-text"><%= project_description %></p>
+      <%= link_to "Project Page", project_link, class: "card-link project_card_link"%>
+    </div>
+</div>
