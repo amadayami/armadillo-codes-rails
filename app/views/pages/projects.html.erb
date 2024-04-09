@@ -1,80 +1,101 @@
 <div class="container mt-5">
             <!--Row 1-->
             <div class="row justify-content-md-center">
-              <div class="card" style="width: 18rem; margin: 15px;">
-                  <div class="card-body col-sm">
-                    <h5 class="card-title">Squishmallow Search</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Made with: HTML, CSS, PHP, JS</h6>
-                    <p class="card-text">Squishmallow database search to find Squishmallows by collector number, name, squishdate, and description</p>
-                    <%= link_to "Project Page", squishsearch_path, class: "card-link project_card_link"%>
-                  </div>
-              </div>
-          
-              <div class="card" style="width: 18rem; margin: 15px;">
-                  <div class="card-body col-sm">
-                    <h5 class="card-title">Weather Master</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Made with: Unity/C#</h6>
-                    <p class="card-text">Top-down destruction game created with a team of student devs for MoonRift Entertainment</p>
-                    <%= link_to "Project Page", weathermaster_path, class: "card-link project_card_link"%>
-                  </div>
-              </div>
-  
-              <div class="card" style="width: 18rem; margin: 15px;">
-                  <div class="card-body col-sm">
-                    <h5 class="card-title">D&amp;D Character Sheet and Inventory Management</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Made with: Java</h6>
-                    <p class="card-text">Program for D&amp;D character management (wip!)</p>
-                    <a href="https://github.com/amadayami/DnD-Sheet-and-Dice" class="card-link project_card_link">Github</a>
-                  </div>
-              </div>
+              <%=
+                render(
+                  partial: "projectcard",
+                  locals: {
+                    project_title: "Squishmallow Search",
+                    project_languages: "HTML, CSS, PHP, JS",
+                    project_description: "Squishmallow database search to find Squishmallows by collector number, name, squishdate, and description",
+                    project_link: squishsearch_path
+                  }
+                )
+              %>
+              <%= 
+                render(
+                  partial: "projectcard",
+                  locals: {
+                    project_title: "Weather Master",
+                    project_languages: "Unity/C#",
+                    project_description: "Top-down destruction game created with a team of student devs for MoonRift Entertainment",
+                    project_link: weathermaster_path
+                  }
+                )
+              %>
+              <%=
+                render(
+                  partial: "projectcard",
+                  locals: {
+                    project_title: "D&D Character Sheet and Inventory Management",
+                    project_languages: "Java",
+                    project_description: "Program for D&D character management (wip!)",
+                    project_link: "https://github.com/amadayami/DnD-Sheet-and-Dice"
+                  }
+                )
+              %>
             </div>
 
             <!--Row 2-->
             <div class="row justify-content-md-center">
-              <div class="card" style="width: 18rem; margin: 15px;">
-                  <div class="card-body col-sm">
-                    <h5 class="card-title">Twitter Connections</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Made with: Python, Twitter API</h6>
-                    <p class="card-text">Project made using Twitter API to analyze connections between users</p>
-                    <a href="https://github.com/amadayami/twitterConnections" class="card-link project_card_link">Github</a>
-                  </div>
-              </div>
-              <div class="card" style="width: 18rem; margin: 15px;">
-                  <div class="card-body col-sm">
-                    <h5 class="card-title">Illusory Truth</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Made with: Scratch</h6>
-                    <p class="card-text">Point-and-click game about having an anxiety disorder</p>
-                    <a href="https://scratch.mit.edu/projects/520444989/" class="card-link project_card_link">Scratch</a>
-                  </div>
-              </div>
-  
-              <div class="card" style="width: 18rem; margin: 15px;">
-                  <div class="card-body col-sm">
-                    <h5 class="card-title">Choose Your Own Adventure Game</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Made with: Javascript, HTML</h6>
-                    <p class="card-text">Choose your own adventure in a dungeon</p>
-                    <a href="https://github.com/amadayami/oldChooseYourAdventure" class="card-link project_card_link">Github</a>
-                  </div>
-              </div>
+              <%=
+                render(
+                  partial: "projectcard",
+                  locals: {
+                    project_title: "Twitter Connections",
+                    project_languages: "Python, Twitter API",
+                    project_description: "Class project created to analyze connections between Twitter users",
+                    project_link: "https://github.com/amadayami/twitterConnections"
+                  }
+                )
+              %>
+              <%=
+                render(
+                  partial: "projectcard",
+                  locals: {
+                    project_title: "Illusory Truth",
+                    project_languages: "Scratch",
+                    project_description: "Point-and-click game about having an anxiety disorder",
+                    project_link: "https://scratch.mit.edu/projects/520444989/"
+                  }
+                )
+              %>
+              <%=
+                render(
+                  partial: "projectcard",
+                  locals: {
+                    project_title: "Choose Your Own Adventure Game",
+                    project_languages: "Javascript, HTML",
+                    project_description: "Choose your own adventure in a dungeon",
+                    project_link: "https://github.com/amadayami/oldChooseYourAdventure"
+                  }
+                )
+              %>
             </div>
 
             <!--Row 3-->
             <div class="row justify-content-md-center">
-                <div class="card" style="width: 18rem; margin: 15px;">
-                    <div class="card-body col-sm">
-                      <h5 class="card-title">Memory Game</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Made with: Javascript, HTML</h6>
-                      <p class="card-text">Memory game featuring characters from the series Dragon Age</p>
-                      <a href="https://github.com/amadayami/memoryGame" class="card-link project_card_link">Github</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem; margin: 15px;">
-                    <div class="card-body col-sm">
-                      <h5 class="card-title">In Progress Projects</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Made with: various</h6>
-                      <p class="card-text">Projects that are unfinished that I will hopefully get around to</p>
-                      <%= link_to "Project Page", wips_path, class: "card-link project_card_link"%>
-                    </div>
-                </div>
+                <%=
+                  render(
+                    partial: "projectcard",
+                    locals: {
+                      project_title: "Memory game",
+                      project_languages: "Javascript, HTML",
+                      project_description: "Memory game featuring characters from the Dragon Age series",
+                      project_link: "https://github.com/amadayami/memoryGame"
+                    }
+                  )
+                %>
+                <%=
+                  render(
+                    partial: "projectcard",
+                    locals: {
+                      project_title: "In Progress Projects",
+                      project_languages: "various",
+                      project_description: "Projects that are unfinished that I will hopefully get around to",
+                      project_link: wips_path
+                    }
+                  )
+                %>
             </div>
         </div>
