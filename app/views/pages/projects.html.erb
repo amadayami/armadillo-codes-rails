@@ -1,101 +1,101 @@
 <div class="container mt-5">
-            <!--Row 1-->
-            <div class="row justify-content-md-center">
-              <%=
-                render(
-                  partial: "projectcard",
-                  locals: {
-                    project_title: "Squishmallow Search",
-                    project_languages: "HTML, CSS, PHP, JS",
-                    project_description: "Squishmallow database search to find Squishmallows by collector number, name, squishdate, and description",
-                    project_link: squishsearch_path
-                  }
-                )
-              %>
-              <%= 
-                render(
-                  partial: "projectcard",
-                  locals: {
-                    project_title: "Weather Master",
-                    project_languages: "Unity/C#",
-                    project_description: "Top-down destruction game created with a team of student devs for MoonRift Entertainment",
-                    project_link: weathermaster_path
-                  }
-                )
-              %>
-              <%=
-                render(
-                  partial: "projectcard",
-                  locals: {
-                    project_title: "D&D Character Sheet and Inventory Management",
-                    project_languages: "Java",
-                    project_description: "Program for D&D character management (wip!)",
-                    project_link: "https://github.com/amadayami/DnD-Sheet-and-Dice"
-                  }
-                )
-              %>
-            </div>
+  <!--Row 1-->
+  <div class="row justify-content-md-center">
+    <%=
+      render(
+        partial: "projectcard",
+        locals: {
+          project_title: "Refuge Restrooms Pagination",
+          project_languages: "Ruby on Rails",
+          project_descripton: "Updates the pagination on Refuge Restrooms from kaminari to pagy."
+          project_link: "https://github.com/RefugeRestrooms/refugerestrooms/pull/681"
+        }
+      )
+    %>
+    <%=
+      render(
+        partial: "projectcard",
+        locals: {
+          project_title: "Squishmallow Search",
+          project_languages: "HTML, CSS, PHP, JS",
+          project_description: "Squishmallow database search to find Squishmallows by collector number, name, squishdate, and description",
+          project_link: squishsearch_path
+        }
+      )
+    %>
+    <%= 
+      render(
+        partial: "projectcard",
+        locals: {
+          project_title: "Weather Master",
+          project_languages: "Unity/C#",
+          project_description: "Top-down destruction game created with a team of student devs for MoonRift Entertainment",
+          project_link: weathermaster_path
+        }
+      )
+    %>
+  </div>
 
-            <!--Row 2-->
-            <div class="row justify-content-md-center">
-              <%=
-                render(
-                  partial: "projectcard",
-                  locals: {
-                    project_title: "Twitter Connections",
-                    project_languages: "Python, Twitter API",
-                    project_description: "Class project created to analyze connections between Twitter users",
-                    project_link: "https://github.com/amadayami/twitterConnections"
-                  }
-                )
-              %>
-              <%=
-                render(
-                  partial: "projectcard",
-                  locals: {
-                    project_title: "Illusory Truth",
-                    project_languages: "Scratch",
-                    project_description: "Point-and-click game about having an anxiety disorder",
-                    project_link: "https://scratch.mit.edu/projects/520444989/"
-                  }
-                )
-              %>
-              <%=
-                render(
-                  partial: "projectcard",
-                  locals: {
-                    project_title: "Choose Your Own Adventure Game",
-                    project_languages: "Javascript, HTML",
-                    project_description: "Choose your own adventure in a dungeon",
-                    project_link: "https://github.com/amadayami/oldChooseYourAdventure"
-                  }
-                )
-              %>
-            </div>
+  <!--Row 2-->
+  <div class="row justify-content-md-center">
+    <%=
+      render(
+        partial: "projectcard",
+        locals: {
+          project_title: "D&D Character Sheet and Inventory Management",
+          project_languages: "Java",
+          project_description: "Program for D&D character management (wip!)",
+          project_link: "https://github.com/amadayami/DnD-Sheet-and-Dice"
+        }
+      )
+    %>
+    <%=
+      render(
+        partial: "projectcard",
+        locals: {
+          project_title: "Twitter Connections",
+          project_languages: "Python, Twitter API",
+          project_description: "Class project created to analyze connections between Twitter users",
+          project_link: "https://github.com/amadayami/twitterConnections"
+        }
+      )
+    %>
+    <%=
+      render(
+        partial: "projectcard",
+        locals: {
+          project_title: "Illusory Truth",
+          project_languages: "Scratch",
+          project_description: "Point-and-click game about having an anxiety disorder",
+          project_link: "https://scratch.mit.edu/projects/520444989/"
+        }
+      )
+    %>
+  </div>
 
-            <!--Row 3-->
-            <div class="row justify-content-md-center">
-                <%=
-                  render(
-                    partial: "projectcard",
-                    locals: {
-                      project_title: "Memory game",
-                      project_languages: "Javascript, HTML",
-                      project_description: "Memory game featuring characters from the Dragon Age series",
-                      project_link: "https://github.com/amadayami/memoryGame"
-                    }
-                  )
-                %>
-                <%=
-                  render(
-                    partial: "projectcard",
-                    locals: {
-                      project_title: "In Progress Projects",
-                      project_languages: "various",
-                      project_description: "Projects that are unfinished that I will hopefully get around to",
-                      project_link: wips_path
-                    }
-                  )
-                %>
-            </div>
-        </div>
+  <!--Row 3-->
+  <div class="row justify-content-md-center">
+    <%=
+      render(
+        partial: "projectcard",
+        locals: {
+          project_title: "Choose Your Own Adventure Game",
+          project_languages: "Javascript, HTML",
+          project_description: "Choose your own adventure in a dungeon",
+          project_link: "https://github.com/amadayami/oldChooseYourAdventure"
+        }
+      )
+    %>
+    <%=
+      render(
+        partial: "projectcard",
+        locals: {
+          project_title: "Memory game",
+          project_languages: "Javascript, HTML",
+          project_description: "Memory game featuring characters from the Dragon Age series",
+          project_link: "https://github.com/amadayami/memoryGame"
+        }
+      )
+    %>
+  </div>
+</div>
